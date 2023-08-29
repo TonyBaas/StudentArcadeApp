@@ -1,0 +1,588 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6A1724732A9E68E100248CF3 /* studentArcadeAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A1724722A9E68E100248CF3 /* studentArcadeAppApp.swift */; };
+		6A1724752A9E68E100248CF3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A1724742A9E68E100248CF3 /* ContentView.swift */; };
+		6A1724772A9E68E200248CF3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6A1724762A9E68E200248CF3 /* Assets.xcassets */; };
+		6A17247A2A9E68E200248CF3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6A1724792A9E68E200248CF3 /* Preview Assets.xcassets */; };
+		6A1724842A9E68E200248CF3 /* studentArcadeAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A1724832A9E68E200248CF3 /* studentArcadeAppTests.swift */; };
+		6A17248E2A9E68E200248CF3 /* studentArcadeAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A17248D2A9E68E200248CF3 /* studentArcadeAppUITests.swift */; };
+		6A1724902A9E68E200248CF3 /* studentArcadeAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A17248F2A9E68E200248CF3 /* studentArcadeAppUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6A1724802A9E68E200248CF3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6A1724672A9E68E100248CF3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6A17246E2A9E68E100248CF3;
+			remoteInfo = studentArcadeApp;
+		};
+		6A17248A2A9E68E200248CF3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6A1724672A9E68E100248CF3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6A17246E2A9E68E100248CF3;
+			remoteInfo = studentArcadeApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6A17246F2A9E68E100248CF3 /* studentArcadeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = studentArcadeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A1724722A9E68E100248CF3 /* studentArcadeAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = studentArcadeAppApp.swift; sourceTree = "<group>"; };
+		6A1724742A9E68E100248CF3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		6A1724762A9E68E200248CF3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6A1724792A9E68E200248CF3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		6A17247F2A9E68E200248CF3 /* studentArcadeAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = studentArcadeAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A1724832A9E68E200248CF3 /* studentArcadeAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = studentArcadeAppTests.swift; sourceTree = "<group>"; };
+		6A1724892A9E68E200248CF3 /* studentArcadeAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = studentArcadeAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A17248D2A9E68E200248CF3 /* studentArcadeAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = studentArcadeAppUITests.swift; sourceTree = "<group>"; };
+		6A17248F2A9E68E200248CF3 /* studentArcadeAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = studentArcadeAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6A17246C2A9E68E100248CF3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6A17247C2A9E68E200248CF3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6A1724862A9E68E200248CF3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6A1724662A9E68E100248CF3 = {
+			isa = PBXGroup;
+			children = (
+				6A1724712A9E68E100248CF3 /* studentArcadeApp */,
+				6A1724822A9E68E200248CF3 /* studentArcadeAppTests */,
+				6A17248C2A9E68E200248CF3 /* studentArcadeAppUITests */,
+				6A1724702A9E68E100248CF3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6A1724702A9E68E100248CF3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6A17246F2A9E68E100248CF3 /* studentArcadeApp.app */,
+				6A17247F2A9E68E200248CF3 /* studentArcadeAppTests.xctest */,
+				6A1724892A9E68E200248CF3 /* studentArcadeAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6A1724712A9E68E100248CF3 /* studentArcadeApp */ = {
+			isa = PBXGroup;
+			children = (
+				6A1724722A9E68E100248CF3 /* studentArcadeAppApp.swift */,
+				6A1724742A9E68E100248CF3 /* ContentView.swift */,
+				6A1724762A9E68E200248CF3 /* Assets.xcassets */,
+				6A1724782A9E68E200248CF3 /* Preview Content */,
+			);
+			path = studentArcadeApp;
+			sourceTree = "<group>";
+		};
+		6A1724782A9E68E200248CF3 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				6A1724792A9E68E200248CF3 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		6A1724822A9E68E200248CF3 /* studentArcadeAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				6A1724832A9E68E200248CF3 /* studentArcadeAppTests.swift */,
+			);
+			path = studentArcadeAppTests;
+			sourceTree = "<group>";
+		};
+		6A17248C2A9E68E200248CF3 /* studentArcadeAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				6A17248D2A9E68E200248CF3 /* studentArcadeAppUITests.swift */,
+				6A17248F2A9E68E200248CF3 /* studentArcadeAppUITestsLaunchTests.swift */,
+			);
+			path = studentArcadeAppUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6A17246E2A9E68E100248CF3 /* studentArcadeApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6A1724932A9E68E200248CF3 /* Build configuration list for PBXNativeTarget "studentArcadeApp" */;
+			buildPhases = (
+				6A17246B2A9E68E100248CF3 /* Sources */,
+				6A17246C2A9E68E100248CF3 /* Frameworks */,
+				6A17246D2A9E68E100248CF3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = studentArcadeApp;
+			productName = studentArcadeApp;
+			productReference = 6A17246F2A9E68E100248CF3 /* studentArcadeApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6A17247E2A9E68E200248CF3 /* studentArcadeAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6A1724962A9E68E200248CF3 /* Build configuration list for PBXNativeTarget "studentArcadeAppTests" */;
+			buildPhases = (
+				6A17247B2A9E68E200248CF3 /* Sources */,
+				6A17247C2A9E68E200248CF3 /* Frameworks */,
+				6A17247D2A9E68E200248CF3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6A1724812A9E68E200248CF3 /* PBXTargetDependency */,
+			);
+			name = studentArcadeAppTests;
+			productName = studentArcadeAppTests;
+			productReference = 6A17247F2A9E68E200248CF3 /* studentArcadeAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		6A1724882A9E68E200248CF3 /* studentArcadeAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6A1724992A9E68E200248CF3 /* Build configuration list for PBXNativeTarget "studentArcadeAppUITests" */;
+			buildPhases = (
+				6A1724852A9E68E200248CF3 /* Sources */,
+				6A1724862A9E68E200248CF3 /* Frameworks */,
+				6A1724872A9E68E200248CF3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6A17248B2A9E68E200248CF3 /* PBXTargetDependency */,
+			);
+			name = studentArcadeAppUITests;
+			productName = studentArcadeAppUITests;
+			productReference = 6A1724892A9E68E200248CF3 /* studentArcadeAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6A1724672A9E68E100248CF3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					6A17246E2A9E68E100248CF3 = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+					6A17247E2A9E68E200248CF3 = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = 6A17246E2A9E68E100248CF3;
+					};
+					6A1724882A9E68E200248CF3 = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = 6A17246E2A9E68E100248CF3;
+					};
+				};
+			};
+			buildConfigurationList = 6A17246A2A9E68E100248CF3 /* Build configuration list for PBXProject "studentArcadeApp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6A1724662A9E68E100248CF3;
+			productRefGroup = 6A1724702A9E68E100248CF3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6A17246E2A9E68E100248CF3 /* studentArcadeApp */,
+				6A17247E2A9E68E200248CF3 /* studentArcadeAppTests */,
+				6A1724882A9E68E200248CF3 /* studentArcadeAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6A17246D2A9E68E100248CF3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A17247A2A9E68E200248CF3 /* Preview Assets.xcassets in Resources */,
+				6A1724772A9E68E200248CF3 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6A17247D2A9E68E200248CF3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6A1724872A9E68E200248CF3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6A17246B2A9E68E100248CF3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A1724752A9E68E100248CF3 /* ContentView.swift in Sources */,
+				6A1724732A9E68E100248CF3 /* studentArcadeAppApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6A17247B2A9E68E200248CF3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A1724842A9E68E200248CF3 /* studentArcadeAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6A1724852A9E68E200248CF3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A1724902A9E68E200248CF3 /* studentArcadeAppUITestsLaunchTests.swift in Sources */,
+				6A17248E2A9E68E200248CF3 /* studentArcadeAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6A1724812A9E68E200248CF3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6A17246E2A9E68E100248CF3 /* studentArcadeApp */;
+			targetProxy = 6A1724802A9E68E200248CF3 /* PBXContainerItemProxy */;
+		};
+		6A17248B2A9E68E200248CF3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6A17246E2A9E68E100248CF3 /* studentArcadeApp */;
+			targetProxy = 6A17248A2A9E68E200248CF3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		6A1724912A9E68E200248CF3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6A1724922A9E68E200248CF3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6A1724942A9E68E200248CF3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"studentArcadeApp/Preview Content\"";
+				DEVELOPMENT_TEAM = WT8J4F9HU5;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = SouthEastTechProgramming.studentArcadeApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6A1724952A9E68E200248CF3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"studentArcadeApp/Preview Content\"";
+				DEVELOPMENT_TEAM = WT8J4F9HU5;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = SouthEastTechProgramming.studentArcadeApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		6A1724972A9E68E200248CF3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = WT8J4F9HU5;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = SouthEastTechProgramming.studentArcadeAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/studentArcadeApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/studentArcadeApp";
+			};
+			name = Debug;
+		};
+		6A1724982A9E68E200248CF3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = WT8J4F9HU5;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = SouthEastTechProgramming.studentArcadeAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/studentArcadeApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/studentArcadeApp";
+			};
+			name = Release;
+		};
+		6A17249A2A9E68E200248CF3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = WT8J4F9HU5;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = SouthEastTechProgramming.studentArcadeAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = studentArcadeApp;
+			};
+			name = Debug;
+		};
+		6A17249B2A9E68E200248CF3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = WT8J4F9HU5;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = SouthEastTechProgramming.studentArcadeAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = studentArcadeApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6A17246A2A9E68E100248CF3 /* Build configuration list for PBXProject "studentArcadeApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6A1724912A9E68E200248CF3 /* Debug */,
+				6A1724922A9E68E200248CF3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6A1724932A9E68E200248CF3 /* Build configuration list for PBXNativeTarget "studentArcadeApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6A1724942A9E68E200248CF3 /* Debug */,
+				6A1724952A9E68E200248CF3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6A1724962A9E68E200248CF3 /* Build configuration list for PBXNativeTarget "studentArcadeAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6A1724972A9E68E200248CF3 /* Debug */,
+				6A1724982A9E68E200248CF3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6A1724992A9E68E200248CF3 /* Build configuration list for PBXNativeTarget "studentArcadeAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6A17249A2A9E68E200248CF3 /* Debug */,
+				6A17249B2A9E68E200248CF3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6A1724672A9E68E100248CF3 /* Project object */;
+}
