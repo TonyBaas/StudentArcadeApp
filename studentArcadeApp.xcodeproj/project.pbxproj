@@ -14,6 +14,7 @@
 		6A1724842A9E68E200248CF3 /* studentArcadeAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A1724832A9E68E200248CF3 /* studentArcadeAppTests.swift */; };
 		6A17248E2A9E68E200248CF3 /* studentArcadeAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A17248D2A9E68E200248CF3 /* studentArcadeAppUITests.swift */; };
 		6A1724902A9E68E200248CF3 /* studentArcadeAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A17248F2A9E68E200248CF3 /* studentArcadeAppUITestsLaunchTests.swift */; };
+		6A3D0AED2A9F047A0041B099 /* SplashScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A3D0AEC2A9F047A0041B099 /* SplashScreenView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		6A1724892A9E68E200248CF3 /* studentArcadeAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = studentArcadeAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A17248D2A9E68E200248CF3 /* studentArcadeAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = studentArcadeAppUITests.swift; sourceTree = "<group>"; };
 		6A17248F2A9E68E200248CF3 /* studentArcadeAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = studentArcadeAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		6A3D0AEC2A9F047A0041B099 /* SplashScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +97,7 @@
 			isa = PBXGroup;
 			children = (
 				6A1724722A9E68E100248CF3 /* studentArcadeAppApp.swift */,
+				6A3D0AEC2A9F047A0041B099 /* SplashScreenView.swift */,
 				6A1724742A9E68E100248CF3 /* ContentView.swift */,
 				6A1724762A9E68E200248CF3 /* Assets.xcassets */,
 				6A1724782A9E68E200248CF3 /* Preview Content */,
@@ -259,6 +262,7 @@
 			files = (
 				6A1724752A9E68E100248CF3 /* ContentView.swift in Sources */,
 				6A1724732A9E68E100248CF3 /* studentArcadeAppApp.swift in Sources */,
+				6A3D0AED2A9F047A0041B099 /* SplashScreenView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
