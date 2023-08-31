@@ -18,7 +18,7 @@ struct ContentView: View {
                 .background(Color(red: 0.2, green: 0, blue: 1))
                 .clipShape(Capsule())
                 .foregroundColor(.white)
-                NavigationLink(destination: Text("Second")) {
+                NavigationLink(destination: HangmanView()) {
                     Text("Hangman")
                 }
                 .padding()
