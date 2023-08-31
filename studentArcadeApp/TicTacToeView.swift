@@ -10,7 +10,6 @@ import SwiftUI
 struct TicTacToeView: View {
     var body: some View {
         VStack{
-
             
         }
         

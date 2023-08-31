@@ -9,25 +9,23 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            NavigationView {
+        NavigationView {
+            VStack {
                 NavigationLink(destination: TicTacToeView()) {
                     Text("Tic-Tac-Toe")
                 }
-                   .padding()
-                   .background(Color(red: 0.2, green: 0, blue: 1))
-                   .clipShape(Capsule())
-                   .foregroundColor(.white)
-                   
-                NavigationLink(destination: TicTacToeView()) {
+                .padding()
+                .background(Color(red: 0.2, green: 0, blue: 1))
+                .clipShape(Capsule())
+                .foregroundColor(.white)
+                NavigationLink(destination: HangmanView()) {
                     Text("Hangman")
                 }
-                    .padding()
-                    .background(Color(red: 0.2, green: 0, blue: 1))
-                    .clipShape(Capsule())
-                    .foregroundColor(.white)
+                .padding()
+                .background(Color(red: 0.2, green: 0, blue: 1))
+                .clipShape(Capsule())
+                .foregroundColor(.white)
             }
-            
         }
     }
 }
