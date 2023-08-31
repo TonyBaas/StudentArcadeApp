@@ -10,8 +10,8 @@ import SwiftUI
 struct TicTacToeView: View {
     var body: some View {
         VStack{
-            Text("Tic Tac Toe!")
-            Image("")
+
+            
         }
         
     }
