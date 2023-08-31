@@ -10,15 +10,25 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         VStack {
-            Button("Press Me") {
-                
+            NavigationView {
+                NavigationLink(destination: TicTacToeView()) {
+                    Text("Tic-Tac-Toe")
+                }
+                   .padding()
+                   .background(Color(red: 0.2, green: 0, blue: 1))
+                   .clipShape(Capsule())
+                   .foregroundColor(.white)
+                   
+                NavigationLink(destination: TicTacToeView()) {
+                    Text("Hangman")
+                }
+                    .padding()
+                    .background(Color(red: 0.2, green: 0, blue: 1))
+                    .clipShape(Capsule())
+                    .foregroundColor(.white)
             }
-            .padding()
-            .background(Color(red: 0.2, green: 0, blue: 1))
-            .clipShape(Capsule())
+            
         }
-        
-        .padding()
     }
 }
 
