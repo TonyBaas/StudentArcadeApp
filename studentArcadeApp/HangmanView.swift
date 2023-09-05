@@ -13,10 +13,10 @@ struct HangmanView: View {
     @State private var guess = ""
     @State private var incorrectLetterArray = [Character]()
     @State private var usedLetter = [Character]()
-    
-    
-    
+
     var body: some View {
+        
+        
         VStack{
             //Text heading and style for the game
             Text("Hangman")
@@ -34,25 +34,23 @@ struct HangmanView: View {
                     makeGuess()
                 }) {
                     Text("Guess")
-                        .padding(13)
-                        .background(Color.black)
-                        .foregroundColor(Color.purple)
-                        .cornerRadius(10)
+                        .padding(25)
+                        .background(Color(red: 0.2, green: 0, blue: 1))
+                        .clipShape(Capsule())
+                        .foregroundColor(.white)
                 }
                 Button(action: {
                     //Reset button tap
                     resetGame()
                 }) {
                     Text("Reset")
-                        .padding(13)
-                        .background(Color.black)
-                        .foregroundColor(Color.purple)
-                        .cornerRadius(10)
+                        .padding(25)
+                        .background(Color(red: 0.2, green: 0, blue: 1))
+                        .clipShape(Capsule())
+                        .foregroundColor(.white)
                 }
-                
             }
         }
-  
     }
     
     func makeGuess() {
