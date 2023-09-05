@@ -19,7 +19,7 @@ struct ContentView: View {
                     
                 NavigationLink(destination: TicTacToeView()) {
                     Text("TicTacToe")
-                        .navigationBarTitle(Text("Menu"))
+                        
                         .padding(50)
                         .background(Color(red: 0.2, green: 0, blue: 1))
                         .clipShape(RoundedRectangle(cornerRadius: 15))

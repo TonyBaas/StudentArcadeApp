@@ -15,13 +15,13 @@ struct SplashScreenView: View {
         if isActive {
             ContentView()
         } else {
+            
             VStack{
                 VStack{
-                    Image(systemName: "gamecontroller.fill")
-                        .font(.system(size:60))
-                        .foregroundColor(.red)
-                    Text("Student Acrade")
-                        .font(.system(size:20))
+                    Image("IMG_0797")
+                        .resizable()
+                        .frame(width: 100.0, height: 100.0)
+                            
                 }
                 .scaleEffect(size)
                 .opacity(opacity)
