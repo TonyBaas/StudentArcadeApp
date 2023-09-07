@@ -17,6 +17,7 @@
 		6A3D0AED2A9F047A0041B099 /* SplashScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A3D0AEC2A9F047A0041B099 /* SplashScreenView.swift */; };
 		84E700FE2AA0E55F000ED01D /* TicTacToeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E700FD2AA0E55F000ED01D /* TicTacToeView.swift */; };
 		84E701012AA77DD3000ED01D /* TicTacGameType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E701002AA77DD3000ED01D /* TicTacGameType.swift */; };
+		84E701052AA788D7000ED01D /* ViewModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E701042AA788D7000ED01D /* ViewModifiers.swift */; };
 		E101A69E2AA104EE00942A0F /* HangmanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E101A69D2AA104EE00942A0F /* HangmanView.swift */; };
 /* End PBXBuildFile section */
 
@@ -51,6 +52,7 @@
 		6A3D0AEC2A9F047A0041B099 /* SplashScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenView.swift; sourceTree = "<group>"; };
 		84E700FD2AA0E55F000ED01D /* TicTacToeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicTacToeView.swift; sourceTree = "<group>"; };
 		84E701002AA77DD3000ED01D /* TicTacGameType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicTacGameType.swift; sourceTree = "<group>"; };
+		84E701042AA788D7000ED01D /* ViewModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModifiers.swift; sourceTree = "<group>"; };
 		E101A69D2AA104EE00942A0F /* HangmanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HangmanView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -108,6 +110,7 @@
 				6A3D0AEC2A9F047A0041B099 /* SplashScreenView.swift */,
 				E101A69D2AA104EE00942A0F /* HangmanView.swift */,
 				6A1724742A9E68E100248CF3 /* ContentView.swift */,
+				84E701032AA7889D000ED01D /* Utilities */,
 				6A1724762A9E68E200248CF3 /* Assets.xcassets */,
 				6A1724782A9E68E200248CF3 /* Preview Content */,
 			);
@@ -145,6 +148,14 @@
 				84E701002AA77DD3000ED01D /* TicTacGameType.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		84E701032AA7889D000ED01D /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				84E701042AA788D7000ED01D /* ViewModifiers.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -278,6 +289,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6A1724752A9E68E100248CF3 /* ContentView.swift in Sources */,
+				84E701052AA788D7000ED01D /* ViewModifiers.swift in Sources */,
 				E101A69E2AA104EE00942A0F /* HangmanView.swift in Sources */,
 				84E700FE2AA0E55F000ED01D /* TicTacToeView.swift in Sources */,
 				84E701012AA77DD3000ED01D /* TicTacGameType.swift in Sources */,

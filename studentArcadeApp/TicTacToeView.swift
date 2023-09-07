@@ -24,7 +24,7 @@ struct TicTacToeView: View {
             .accentColor(.primary)
             Text(gameType.description)
                 .padding()
-            VStack{
+            VStack(){
                 switch gameType {
                 case .single:
                     VStack{
@@ -33,7 +33,7 @@ struct TicTacToeView: View {
                     }
                 case .bot:
                     TextField("Your Name", text: $yourName)
-
+                    
                 case .undetermined:
                     EmptyView()
                 }
@@ -56,11 +56,14 @@ struct TicTacToeView: View {
             Image("LaunchScreen")
             Spacer()
         }
-        
+        .padding()
+        .navigationTitle("Tic Tac Toe!")
+        .inNavigationStack()
     }
 }
 
-struct TicTacToeView_Previews: PreviewProvider {
+
+struct Previews_TicTacToeView_Previews: PreviewProvider {
     static var previews: some View {
         TicTacToeView()
     }
