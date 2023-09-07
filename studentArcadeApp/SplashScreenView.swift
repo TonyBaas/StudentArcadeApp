@@ -21,7 +21,6 @@ struct SplashScreenView: View {
                     Image("IMG_0797")
                         .resizable()
                         .frame(width: 100.0, height: 100.0)
-                            
                 }
                 .scaleEffect(size)
                 .opacity(opacity)
