@@ -16,41 +16,45 @@ struct HangmanView: View {
 
     var body: some View {
         
-        
-        VStack{
-            //Text heading and style for the game
-            Text("Hangman")
-                .font(.largeTitle)
-            Spacer()
-            
-            // Game Content below
-            Text("Guess a letter!")
-            Spacer()
-            Spacer()
-            
-            HStack {
-                Button(action: {
-                    //Guess button tap
-                    makeGuess()
-                }) {
-                    Text("Guess")
-                        .padding(25)
-                        .background(Color(red: 0.2, green: 0, blue: 1))
-                        .clipShape(Capsule())
+        backgroundGradient
+            .ignoresSafeArea()
+            .overlay(
+                VStack{
+                    //Text heading and style for the game
+                    Text("Hangman")
+                        .font(.largeTitle)
                         .foregroundColor(.white)
+                    Spacer()
+                    
+                    // Game Content below
+                    Text("Guess a letter!")
+                    Spacer()
+                    Spacer()
+                    
+                    HStack {
+                        Button(action: {
+                            //Guess button tap
+                            makeGuess()
+                        }) {
+                            Text("Guess")
+                                .padding(25)
+                                .background(Color(red: 0.2, green: 0, blue: 1))
+                                .clipShape(Capsule())
+                                .foregroundColor(.white)
+                        }
+                        Button(action: {
+                            //Reset button tap
+                            resetGame()
+                        }) {
+                            Text("Reset")
+                                .padding(25)
+                                .background(Color(red: 0.2, green: 0, blue: 1))
+                                .clipShape(Capsule())
+                                .foregroundColor(.white)
+                        }
+                    }
                 }
-                Button(action: {
-                    //Reset button tap
-                    resetGame()
-                }) {
-                    Text("Reset")
-                        .padding(25)
-                        .background(Color(red: 0.2, green: 0, blue: 1))
-                        .clipShape(Capsule())
-                        .foregroundColor(.white)
-                }
-            }
-        }
+        )
     }
     
     func makeGuess() {
