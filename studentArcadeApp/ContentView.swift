@@ -17,6 +17,7 @@ struct ContentView: View {
                     .font(.system(size:40))
                     .padding(.bottom, 100.0)
                     
+                // Nav button to Hangman
                 NavigationLink(destination: TicTacToeView()) {
                     Text("TicTacToe")
                         
@@ -26,18 +27,15 @@ struct ContentView: View {
                         .foregroundColor(.white)
                 }
                 
-                
+                // Nav button to Hangman
                 NavigationLink(destination: HangmanView()) {
                     Text("Hangman")
-                    //Image(systemName: "swift")
                         .padding(50)
                         .background(Color(red: 0.2, green: 0, blue: 1))
                         .clipShape(RoundedRectangle(cornerRadius: 15))
                         .foregroundColor(.white)
                 }
-                
             }
-            .padding(.bottom)
         }
     }
 }
