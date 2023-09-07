@@ -7,7 +7,8 @@
 
 import SwiftUI
 
-
+let backgroundGradient = Color(.black)
+    
 
 struct SplashScreenView: View {
     @State private var isActive = false
@@ -18,26 +19,28 @@ struct SplashScreenView: View {
         if isActive {
             ContentView()
         } else {
-            
-            VStack{
-                VStack{
-                    Image("IMG_0797")
-                        .resizable()
-                        .frame(width: 100.0, height: 100.0)
-                }
-                .scaleEffect(size)
-                .opacity(opacity)
-                .onAppear {
-                    withAnimation(.easeIn(duration: 1.2)) {
-                        self.size = 0.9
-                        self.opacity = 1.0
+            backgroundGradient
+                .ignoresSafeArea()
+                .overlay(
+                    VStack{
+                        VStack{
+                            Image("IMG_0797")
+                                .resizable()
+                                .frame(width: 100.0, height: 100.0)
+                        }
+                        .scaleEffect(size)
+                        .opacity(opacity)
+                        .onAppear {
+                            withAnimation(.easeIn(duration: 1.2)) {
+                                self.size = 1.1
+                                self.opacity = 1.0
+                            }
+                        }
                     }
-                }
-            }
+                )
             .onAppear {
-                DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
-                    withAnimation{
-                        self.isActive = true
+                DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) { withAnimation{
+                    self.isActive = true
                     }
                 }
             }

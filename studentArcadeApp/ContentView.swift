@@ -7,9 +7,7 @@
 
 import SwiftUI
 
-let backgroundGradient = LinearGradient(
-    colors: [Color(red: 0.1, green: 0, blue: 1), Color(red: 1, green: 0, blue: 0.5)],
-    startPoint: .topTrailing, endPoint: .bottomLeading)
+
 
 struct ContentView: View {
     var body: some View {

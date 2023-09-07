@@ -14,7 +14,13 @@ struct TicTacToeView: View {
     @FocusState private var focus: Bool
     @State private var gameStart = false
     var body: some View {
+        backgroundGradient
+            .ignoresSafeArea()
+            .overlay(
         VStack{
+            Text("Tic Tac Toe")
+                .font(.system(size:50))
+                .foregroundColor(.white)
             Picker("Select Gamemode", selection: $gameType){
                 Text("Select Game Type").tag(GameType.undetermined)
                 Text("Challenge Your Device").tag(GameType.bot)
@@ -58,11 +64,12 @@ struct TicTacToeView: View {
             Spacer()
         }
         .padding()
-        .navigationTitle("Tic Tac Toe!")
         .fullScreenCover(isPresented: $gameStart) {
             TicTacToeApp()
         }
+        )
         .inNavigationStack()
+        
     }
 }
 
