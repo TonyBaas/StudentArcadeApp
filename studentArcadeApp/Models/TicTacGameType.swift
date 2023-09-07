@@ -21,3 +21,7 @@ enum GameType{
         }
     }
 }
+
+enum GamePiece: String{
+    case x, o
+}

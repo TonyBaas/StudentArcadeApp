@@ -12,6 +12,7 @@ struct TicTacToeView: View {
     @State private var yourName = ""
     @State private var opponentsName = ""
     @FocusState private var focus: Bool
+    @State private var gameStart = false
     var body: some View {
         VStack{
             Picker("Select Gamemode", selection: $gameType){
@@ -21,7 +22,6 @@ struct TicTacToeView: View {
             }
             .padding()
             .background(RoundedRectangle(cornerRadius: 10).stroke(lineWidth: 2))
-            .accentColor(.primary)
             Text(gameType.description)
                 .padding()
             VStack(){
@@ -45,6 +45,7 @@ struct TicTacToeView: View {
             if gameType != .undetermined {
                 Button("Start Game") {
                     focus = false
+                    gameStart.toggle()
                 }
                 .buttonStyle(.borderedProminent)
                 .disabled(
@@ -58,6 +59,9 @@ struct TicTacToeView: View {
         }
         .padding()
         .navigationTitle("Tic Tac Toe!")
+        .fullScreenCover(isPresented: $gameStart) {
+            TicTacToeApp()
+        }
         .inNavigationStack()
     }
 }
