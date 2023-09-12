@@ -25,36 +25,51 @@ struct HangmanView: View {
                         .font(.largeTitle)
                         .foregroundColor(.white)
                     Spacer()
-                    
                     // Game Content below
                     Text("Guess a letter!")
                         .foregroundColor(.white)
                     Spacer()
+                    // Display the "hangman" image asset
+                    Image("Hangman")
+                            .resizable()
+                            .frame(width: 250, height: 250)
+                            .aspectRatio(contentMode: .fit)
+                            .foregroundColor(.white)
                     Spacer()
+                    Spacer()
+                    Spacer()
+                    Spacer()
+                  
                     
-                    HStack {
-                        Button(action: {
-                            //Guess button tap
-                            makeGuess()
-                        }) {
-                            Text("Guess")
-                                .padding(25)
-                                .background(Color(red: 0.2, green: 0, blue: 1))
-                                .clipShape(Capsule())
-                                .foregroundColor(.white)
-                        }
-                        Button(action: {
-                            //Reset button tap
-                            resetGame()
-                        }) {
-                            Text("Reset")
-                                .padding(25)
-                                .background(Color(red: 0.2, green: 0, blue: 1))
-                                .clipShape(Capsule())
-                                .foregroundColor(.white)
-                        }
+                HStack {
+                    //Displays the three dashes as placeholders
+                    Text(displayWord)
+                        .font(.largeTitle)
+                        .foregroundColor(.white)
+                        .padding()
+                    
+                    Button(action: {
+                        //Guess button tap
+                        makeGuess()
+                    }) {
+                        Text("Guess")
+                            .padding(25)
+                            .background(Color(red: 0.2,green: 0, blue: 1))
+                            .clipShape(Capsule())
+                            .foregroundColor(.white)
+                    }
+                    Button(action: {
+                        //Reset button tap
+                        resetGame()
+                    }) {
+                        Text("Reset")
+                            .padding(25)
+                            .background(Color(red: 0.2,green: 0, blue: 1))
+                            .clipShape(Capsule())
+                            .foregroundColor(.white)
                     }
                 }
+            }
         )
     }
     
