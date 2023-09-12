@@ -2,7 +2,7 @@
 //  TicTacToeView.swift
 //  studentArcadeApp
 //
-//  Created by admin on 8/31/23.
+//  Created by Connor on 8/31/23.
 //
 
 import SwiftUI
