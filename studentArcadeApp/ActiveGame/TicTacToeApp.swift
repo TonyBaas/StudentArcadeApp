@@ -11,6 +11,7 @@ struct TicTacToeApp: View {
     @EnvironmentObject var game: GameServices
     @Environment(\.dismiss) var dismiss
     var body: some View {
+        //
         VStack {
             if[game.player1.isCurrent, game.player2.isCurrent].allSatisfy({ $0 == false}) {
                 Text("Select a player to start.")
@@ -90,7 +91,7 @@ struct PlayerButtonStyle: ButtonStyle {
         configuration.label
             .padding(8)
             .background(RoundedRectangle(cornerRadius: 10)
-                .fill(isCurrent ? Color.green : Color.gray))
+                .fill(isCurrent ? Color.purple : Color.gray))
             .foregroundColor(.white)
     }
 }
