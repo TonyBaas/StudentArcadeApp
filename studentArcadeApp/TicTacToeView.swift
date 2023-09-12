@@ -18,7 +18,7 @@ struct TicTacToeView: View {
         VStack{
             Text("Tic Tac Toe")
                 .font(.system(size:50))
-                .foregroundColor(.white)
+                .foregroundColor(.gray)
             Picker("Select Gamemode", selection: $gameType){
                 Text("Select Game Type").tag(GameType.undetermined)
                 Text("Challenge Your Device").tag(GameType.bot)
