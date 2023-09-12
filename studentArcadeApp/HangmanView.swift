@@ -28,6 +28,7 @@ struct HangmanView: View {
                     
                     // Game Content below
                     Text("Guess a letter!")
+                        .foregroundColor(.white)
                     Spacer()
                     Spacer()
                     
