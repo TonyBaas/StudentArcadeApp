@@ -24,21 +24,17 @@ struct ContentView: View {
                             
                         // Nav button to Hangman
                         NavigationLink(destination: TicTacToeView()) {
-                            Text("TicTacToe")
-                                
-                                .padding(50)
-                                .background(Color(red: 0.2, green: 0, blue: 1))
-                                .clipShape(RoundedRectangle(cornerRadius: 15))
-                                .foregroundColor(.white)
+                            Image("TicTac")
+                                .resizable()
+                                .frame(width: 250.0, height: 250.0)
                         }
+                        
                         
                         // Nav button to Hangman
                         NavigationLink(destination: HangmanView()) {
-                            Text("Hangman")
-                                .padding(50)
-                                .background(Color(red: 0.2, green: 0, blue: 1))
-                                .clipShape(RoundedRectangle(cornerRadius: 15))
-                                .foregroundColor(.white)
+                            Image("Hangman")
+                                .resizable()
+                                .frame(width: 250.0, height: 250.0)
                         }
                     }
                 )

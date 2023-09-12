@@ -60,7 +60,9 @@ struct TicTacToeView: View {
                     gameType == .single && (yourName.isEmpty || opponentsName.isEmpty)
                 )
             }
-            Image("LaunchScreen")
+            Image("TicTac")
+                .resizable()
+                .frame(width: 250.0, height: 250.0)
             Spacer()
         }
         .padding()

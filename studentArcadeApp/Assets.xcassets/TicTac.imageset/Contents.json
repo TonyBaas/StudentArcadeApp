@@ -1,7 +1,7 @@
 {
   "images" : [
     {
-      "filename" : "LaunchScreen.pdf",
+      "filename" : "IMG_0802.png",
       "idiom" : "universal"
     },
     {
@@ -11,7 +11,7 @@
           "value" : "dark"
         }
       ],
-      "filename" : "LaunchScreenDark.pdf",
+      "filename" : "IMG_0802 1.png",
       "idiom" : "universal"
     }
   ],
