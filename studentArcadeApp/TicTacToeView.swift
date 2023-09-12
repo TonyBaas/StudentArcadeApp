@@ -8,15 +8,13 @@
 import SwiftUI
 
 struct TicTacToeView: View {
+    @EnvironmentObject var game: GameServices
     @State private var gameType: GameType = .undetermined
     @State private var yourName = ""
     @State private var opponentsName = ""
     @FocusState private var focus: Bool
     @State private var gameStart = false
     var body: some View {
-        backgroundGradient
-            .ignoresSafeArea()
-            .overlay(
         VStack{
             Text("Tic Tac Toe")
                 .font(.system(size:50))
@@ -50,6 +48,7 @@ struct TicTacToeView: View {
             .frame(width: 350)
             if gameType != .undetermined {
                 Button("Start Game") {
+                    game.setupGame(gameType: gameType, player1Name: yourName, player2Name: opponentsName)
                     focus = false
                     gameStart.toggle()
                 }
@@ -67,7 +66,6 @@ struct TicTacToeView: View {
         .fullScreenCover(isPresented: $gameStart) {
             TicTacToeApp()
         }
-        )
         .inNavigationStack()
         
     }
@@ -77,5 +75,6 @@ struct TicTacToeView: View {
 struct Previews_TicTacToeView_Previews: PreviewProvider {
     static var previews: some View {
         TicTacToeView()
+            .environmentObject(GameServices())
     }
 }

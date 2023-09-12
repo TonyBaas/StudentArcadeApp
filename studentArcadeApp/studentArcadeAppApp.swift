@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct studentArcadeAppApp: App {
+    @StateObject var game = GameServices()
     var body: some Scene {
         WindowGroup {
             SplashScreenView()
+                .environmentObject(game)
+
         }
     }
 }
