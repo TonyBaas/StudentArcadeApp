@@ -16,6 +16,7 @@ struct TicTacToeView: View {
     @State private var gameStart = false
     
     var body: some View {
+        //Hello
         backgroundGradient
             .ignoresSafeArea()
             .overlay(

@@ -51,7 +51,6 @@ class GameServices: ObservableObject {
     func reset() {
         player1.isCurrent = false
         player2.isCurrent = false
-        movesTaken.removeAll()
         player1.moves.removeAll()
         player2.moves.removeAll()
         gameOver = false

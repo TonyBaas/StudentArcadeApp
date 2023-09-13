@@ -90,7 +90,7 @@ struct PlayerButtonStyle: ButtonStyle {
         configuration.label
             .padding(8)
             .background(RoundedRectangle(cornerRadius: 10)
-                .fill(isCurrent ? Color.green : Color.gray))
+                .fill(isCurrent ? Color.purple : Color.gray))
             .foregroundColor(.white)
     }
 }
