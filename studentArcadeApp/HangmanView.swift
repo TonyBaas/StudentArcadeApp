@@ -10,7 +10,7 @@ import SwiftUI
 struct HangmanView: View {
     @State private var chosenWord = ""
     @State private var displayWord = ""
-    @State private var guess = ""
+    @State private var guess: Character?
     @State private var incorrectLetterArray = [Character]()
     @State private var usedLetter = [Character]()
 
@@ -28,26 +28,33 @@ struct HangmanView: View {
                     // Game Content below
                     Text("Guess a letter!")
                         .foregroundColor(.white)
-                    Spacer()
+                    
                     // Display the "hangman" image asset
-                    Image("Hangman")
+                    Image("hangMan0")
                             .resizable()
-                            .frame(width: 250, height: 250)
+                            .frame(width: 275, height: 275)
                             .aspectRatio(contentMode: .fit)
                             .foregroundColor(.white)
-                    Spacer()
-                    Spacer()
-                    Spacer()
-                    Spacer()
-                  
                     
-                HStack {
-                    //Displays the three dashes as placeholders
                     Text(displayWord)
                         .font(.largeTitle)
                         .foregroundColor(.white)
                         .padding()
                     
+                    // TextField for entering a letter guess
+                    TextField("Enter a letter", text: $guess)
+                        .textFieldStyle(RoundedBorderTextFieldStyle())
+                        .autocapitalization(.allCharacters)
+                        .frame(width: 150)
+
+                    Spacer()
+                    Spacer()
+                    Spacer()
+                    Spacer()
+                    Spacer()
+
+                HStack {
+
                     Button(action: {
                         //Guess button tap
                         makeGuess()
@@ -70,17 +77,57 @@ struct HangmanView: View {
                     }
                 }
             }
+                    .padding()
         )
+            .onAppear {
+                startNewGame()
+            }
     }
     
-    func makeGuess() {
-        //Guess logic
+            //Function that starts a new game
+            func startNewGame() {
+            // Chooses a random word from wordArray
+            guard let randomWord = wordArray.randomElement()?.uppercased() else {
+                return
+            }
+            chosenWord = randomWord
+            // Shows the amount of dashes regarding the amount of letters per word
+            displayWord = String(repeating: "_", count: chosenWord.count)
+        }
+        
     }
+    func makeGuess() {
+        // Check if the guess is a single character
+                guard guess.count == 1 else {
+                    // Handle invalid guess (more than one character)
+                    return
+                }
+                
+                // Convert the guess to a character
+                if let guessedChar = guess.uppercased().first {
+                    var newDisplayWord = ""
+                    
+                    for (index, char) in chosenWord.enumerated() {
+                        if char == guessedChar {
+                            //This replaces the corresponding underscore with the guessed letter
+                            newDisplayWord += String(guessedChar)
+                        } else {
+                            //keeps underscore or already guessed letters
+                            newDisplayWord += String(displayWord[displayWord.index(displayWord.startIndex, offsetBy: index)])
+                        }
+                    }
+                    // Process the guess with the character (guessedChar)
+                    // You can update your game logic here
+                }
+                
+                // Clear the guess
+            guess = ""
+            }
     
     func resetGame() {
         //Reset Logic
     }
-}
+
 
 struct HangmanView_Previews: PreviewProvider {
     static var previews: some View {
@@ -89,7 +136,7 @@ struct HangmanView_Previews: PreviewProvider {
 }
 
 
-    var wordArray = ["WATER", "SENTENCE", "APARTMENT", "BLANKET", "SWIFT", "PROGRAMMING", "BUTLER", "HIGHWAY", "AIRPORT", "MOUNTAIN", "NATURE", "FRIEND", "PROFESSOR", "SOUTHEAST", "COLLEGE", "DECEMBER"]
+    var wordArray = ["CAT", "RAT", "TAP", "SON", "RUN", "JOG", "FOX", "DOG", "FRY", "TIE"]
     var chosenWord = ""
     var displayArray = [Character]()
     var displayWord = ""
