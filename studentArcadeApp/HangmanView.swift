@@ -10,15 +10,16 @@ import SwiftUI
 struct HangmanView: View {
     @State private var chosenWord = ""
     @State private var displayWord = ""
-    @State private var guess: Character?
+    @State private var guess = ""
     @State private var incorrectLetterArray = [Character]()
     @State private var usedLetter = [Character]()
+    
+    var wordArray = ["CAT", "RAT", "TAP", "SON", "RUN", "JOG", "FOX", "DOG", "FRY", "TIE"]
+
 
     var body: some View {
         
-        backgroundGradient
-            .ignoresSafeArea()
-            .overlay(
+
                 VStack{
                     //Text heading and style for the game
                     Text("Hangman")
@@ -78,7 +79,8 @@ struct HangmanView: View {
                 }
             }
                     .padding()
-        )
+                    .background(LinearGradient(gradient: Gradient(colors: [.blue, .purple]), startPoint: .top, endPoint: .bottom))
+        
             .onAppear {
                 startNewGame()
             }
@@ -87,7 +89,7 @@ struct HangmanView: View {
             //Function that starts a new game
             func startNewGame() {
             // Chooses a random word from wordArray
-            guard let randomWord = wordArray.randomElement()?.uppercased() else {
+            guard let randomWord = wordArray.randomElement()?.uppercased() else {#imageLiteral(resourceName: "simulator_screenshot_750A92AE-9659-464A-8168-C43FC2C2555E.png")
                 return
             }
             chosenWord = randomWord
@@ -95,49 +97,42 @@ struct HangmanView: View {
             displayWord = String(repeating: "_", count: chosenWord.count)
         }
         
-    }
     func makeGuess() {
         // Check if the guess is a single character
-                guard guess.count == 1 else {
-                    // Handle invalid guess (more than one character)
-                    return
+        guard guess.count == 1 else {
+            // Handle invalid guess (more than one character)
+            return
+        }
+        
+        // Convert the guess to a character
+        if let guessedChar = guess.uppercased().first {
+            var newDisplayWord = ""
+            
+            for (index, char) in chosenWord.enumerated() {
+                if char == guessedChar {
+                    //This replaces the corresponding underscore with the guessed letter
+                    newDisplayWord += String(guessedChar)
+                } else {
+                    //keeps underscore or already guessed letters
+                    newDisplayWord += String(displayWord[displayWord.index(displayWord.startIndex, offsetBy: index)])
                 }
-                
-                // Convert the guess to a character
-                if let guessedChar = guess.uppercased().first {
-                    var newDisplayWord = ""
-                    
-                    for (index, char) in chosenWord.enumerated() {
-                        if char == guessedChar {
-                            //This replaces the corresponding underscore with the guessed letter
-                            newDisplayWord += String(guessedChar)
-                        } else {
-                            //keeps underscore or already guessed letters
-                            newDisplayWord += String(displayWord[displayWord.index(displayWord.startIndex, offsetBy: index)])
-                        }
-                    }
-                    // Process the guess with the character (guessedChar)
-                    // You can update your game logic here
-                }
-                
-                // Clear the guess
-            guess = ""
             }
-    
-    func resetGame() {
-        //Reset Logic
+            // Process the guess with the character (guessedChar)
+            // You can update your game logic here
+        }
+        
+        // Clear the guess
+        guess = ""
     }
+        
+        func resetGame() {
+            //Reset Logic
+        }
 
+    }
 
 struct HangmanView_Previews: PreviewProvider {
     static var previews: some View {
         HangmanView()
     }
 }
-
-
-    var wordArray = ["CAT", "RAT", "TAP", "SON", "RUN", "JOG", "FOX", "DOG", "FRY", "TIE"]
-    var chosenWord = ""
-    var displayArray = [Character]()
-    var displayWord = ""
-    var guess: Character!

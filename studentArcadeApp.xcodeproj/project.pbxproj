@@ -114,10 +114,10 @@
 			children = (
 				6A1724722A9E68E100248CF3 /* studentArcadeAppApp.swift */,
 				84E700FD2AA0E55F000ED01D /* TicTacToeView.swift */,
+				E101A69D2AA104EE00942A0F /* HangmanView.swift */,
 				84718BB22AAA2232008F82FF /* ActiveGame */,
 				84E700FF2AA77D7C000ED01D /* Models */,
 				6A3D0AEC2A9F047A0041B099 /* SplashScreenView.swift */,
-				E101A69D2AA104EE00942A0F /* HangmanView.swift */,
 				6A1724742A9E68E100248CF3 /* ContentView.swift */,
 				84E701032AA7889D000ED01D /* Utilities */,
 				6A1724762A9E68E200248CF3 /* Assets.xcassets */,
