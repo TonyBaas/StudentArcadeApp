@@ -30,7 +30,9 @@ struct HangmanView: View {
     var wordArray = ["CAT", "RAT", "TAP", "SON", "RUN", "JOG", "FOX", "DOG", "FRY", "TIE"]
 
     var body: some View {
-
+        backgroundGradient
+            .ignoresSafeArea()
+            .overlay(
             VStack {
                 Text("Hangman")//Title of game
                     .font(.largeTitle)
@@ -96,10 +98,8 @@ struct HangmanView: View {
                     }
                 }
             }
-                    //background styling
                     .padding(60)
-                    .background(LinearGradient(gradient: Gradient(colors: [.blue, .purple]), startPoint: .top, endPoint: .bottom))
-        
+        )
                     .alert(isPresented: $showAlert) {
                         Alert(
                             title: Text(alertMessage),
