@@ -22,6 +22,11 @@ struct TicTacToeApp: View {
                 .buttonStyle(PlayerButtonStyle(isCurrent: game.player1.isCurrent))
                 Button(game.player2.name) {
                     game.player2.isCurrent = true
+                    if game.gameType == .bot {
+                        Task {
+                            await game.deviceMove()
+                        }
+                    }
                 }
                 .buttonStyle(PlayerButtonStyle(isCurrent: game.player2.isCurrent))            }
             .disabled(game.gameStarted)
@@ -39,6 +44,16 @@ struct TicTacToeApp: View {
                 HStack {
                     ForEach(6...8, id: \.self) { index in SquareView(index: index)
                         
+                    }
+                }
+            }
+            .overlay {
+                if game.isThnking {
+                    VStack {
+                        Text (" Thinking... ")
+                            .foregroundColor(Color(.systemBackground))
+                            .background(Rectangle().fill(Color.primary))
+                        ProgressView()
                     }
                 }
             }
