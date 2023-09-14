@@ -127,6 +127,7 @@ struct HangmanView: View {
     }
     
     
+    //function for when guess button is tapped
     func makeGuess() {
         print("makeguess function started")//debug
         // Check if the game has already been won or lost
