@@ -89,7 +89,7 @@ struct HangmanView: View {
             //Function that starts a new game
             func startNewGame() {
             // Chooses a random word from wordArray
-            guard let randomWord = wordArray.randomElement()?.uppercased() else {#imageLiteral(resourceName: "simulator_screenshot_750A92AE-9659-464A-8168-C43FC2C2555E.png")
+            guard let randomWord = wordArray.randomElement()?.uppercased() else {
                 return
             }
             chosenWord = randomWord
