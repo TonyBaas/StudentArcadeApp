@@ -14,50 +14,49 @@ struct HangmanView: View {
     @State private var incorrectLetterArray = [Character]()
     @State private var usedLetter = [Character]()
     
+    
+    
+    //maximum incorrect guesses
+    var MaxIncorrectGueses = 7
+    
+    //Array for the words
     var wordArray = ["CAT", "RAT", "TAP", "SON", "RUN", "JOG", "FOX", "DOG", "FRY", "TIE"]
 
-
     var body: some View {
-        
-
-                VStack{
-                    //Text heading and style for the game
-                    Text("Hangman")
-                        .font(.largeTitle)
-                        .foregroundColor(.white)
-                    Spacer()
-                    // Game Content below
-                    Text("Guess a letter!")
-                        .foregroundColor(.white)
-                    
-                    // Display the "hangman" image asset
-                    Image("hangMan0")
-                            .resizable()
-                            .frame(width: 275, height: 275)
-                            .aspectRatio(contentMode: .fit)
-                            .foregroundColor(.white)
-                    
-                    Text(displayWord)
-                        .font(.largeTitle)
-                        .foregroundColor(.white)
-                        .padding()
-                    
-                    // TextField for entering a letter guess
-                    TextField("Enter a letter", text: $guess)
-                        .textFieldStyle(RoundedBorderTextFieldStyle())
-                        .autocapitalization(.allCharacters)
-                        .frame(width: 150)
-
-                    Spacer()
-                    Spacer()
-                    Spacer()
-                    Spacer()
-                    Spacer()
-
+        ZStack {
+            LinearGradient(gradient: Gradient(colors: [.blue, .purple]), startPoint: .top, endPoint: .bottom)
+                .ignoresSafeArea()
+            
+            VStack {
+                Text("Hangman")
+                    .font(.largeTitle)
+                    .foregroundColor(.white)
+                
+                Spacer()
+                
+                Text("Guess a letter!")
+                    .foregroundColor(.white)
+                
+                Image("hangMan0")
+                    .resizable()
+                    .frame(width: 275, height: 275)
+                    .aspectRatio(contentMode: .fit)
+                    .foregroundColor(.white)
+                
+                Text(displayWord)
+                    .font(.largeTitle)
+                    .foregroundColor(.white)
+                    .padding()
+                
+                TextField("Enter a letter", text: $guess)
+                    .textFieldStyle(RoundedBorderTextFieldStyle())
+                    .autocapitalization(.allCharacters)
+                    .frame(width: 150)
+                
+                Spacer()
+                
                 HStack {
-
                     Button(action: {
-                        //Guess button tap
                         makeGuess()
                     }) {
                         Text("Guess")
@@ -66,8 +65,8 @@ struct HangmanView: View {
                             .clipShape(Capsule())
                             .foregroundColor(.white)
                     }
+                    
                     Button(action: {
-                        //Reset button tap
                         resetGame()
                     }) {
                         Text("Reset")
@@ -78,21 +77,21 @@ struct HangmanView: View {
                     }
                 }
             }
-                    .padding()
-                    .background(LinearGradient(gradient: Gradient(colors: [.blue, .purple]), startPoint: .top, endPoint: .bottom))
-        
-            .onAppear {
-                startNewGame()
-            }
+        }
+        .onAppear {
+            startNewGame()
+        }
     }
     
             //Function that starts a new game
             func startNewGame() {
             // Chooses a random word from wordArray
-            guard let randomWord = wordArray.randomElement()?.uppercased() else {#imageLiteral(resourceName: "simulator_screenshot_750A92AE-9659-464A-8168-C43FC2C2555E.png")
-                return
-            }
-            chosenWord = randomWord
+                guard let randomWord = wordArray.randomElement()?.uppercased()
+                else{
+                    chosenWord = "CAT"
+                    return
+                }
+               
             // Shows the amount of dashes regarding the amount of letters per word
             displayWord = String(repeating: "_", count: chosenWord.count)
         }
