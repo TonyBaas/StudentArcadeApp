@@ -106,7 +106,7 @@ class GameServices: ObservableObject {
     
     func deviceMove() async {
         isThnking.toggle()
-        try? await Task.sleep(nanoseconds: 100_000_000_000)
+        try? await Task.sleep(nanoseconds: 1_000_000_000)
         if let move = possibleMoves.randomElement() {
             if let matchingIndex = Move.all.firstIndex(where: {$0 == move}) {
                 makeMove(at: matchingIndex)
