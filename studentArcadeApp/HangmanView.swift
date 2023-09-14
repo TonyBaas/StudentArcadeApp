@@ -78,6 +78,20 @@ struct HangmanView: View {
                     }
                 }
             }
+                    .padding()
+                    .background(LinearGradient(gradient: Gradient(colors: [.blue, .purple]), startPoint: .top, endPoint: .bottom))
+        
+            .onAppear {
+                startNewGame()
+            }
+    }
+    
+            //Function that starts a new game
+            func startNewGame() {
+            // Chooses a random word from wordArray
+            guard let randomWord = wordArray.randomElement()?.uppercased() else {
+                return
+            }
         }
         .onAppear {
             startNewGame()

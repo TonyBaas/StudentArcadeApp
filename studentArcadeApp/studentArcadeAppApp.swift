@@ -14,7 +14,7 @@ struct studentArcadeAppApp: App {
         WindowGroup {
             SplashScreenView()
                 .environmentObject(game)
-
+            
         }
     }
 }
