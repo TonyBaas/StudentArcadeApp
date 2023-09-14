@@ -13,6 +13,7 @@ struct HangmanView: View {
     @State private var guess = ""
     @State private var incorrectLetterArray = [Character]()
     @State private var usedLetter = [Character]()
+    @State private var hangmanState = 0 //hangman's initial state
     
     
     
@@ -37,7 +38,7 @@ struct HangmanView: View {
                 Text("Guess a letter!")
                     .foregroundColor(.white)
                 
-                Image("hangMan0")
+                Image("hangMan0\(hangmanState)")
                     .resizable()
                     .frame(width: 275, height: 275)
                     .aspectRatio(contentMode: .fit)
@@ -51,7 +52,7 @@ struct HangmanView: View {
                 TextField("Enter a letter", text: $guess)
                     .textFieldStyle(RoundedBorderTextFieldStyle())
                     .autocapitalization(.allCharacters)
-                    .frame(width: 150)
+                    .frame(width: 175)
                 
                 Spacer()
                 
@@ -83,19 +84,20 @@ struct HangmanView: View {
         }
     }
     
-            //Function that starts a new game
-            func startNewGame() {
-            // Chooses a random word from wordArray
-                guard let randomWord = wordArray.randomElement()?.uppercased()
-                else{
-                    chosenWord = "CAT"
-                    return
-                }
-               
-            // Shows the amount of dashes regarding the amount of letters per word
-            displayWord = String(repeating: "_", count: chosenWord.count)
+    //Function that starts a new game
+    func startNewGame() {
+        // Chooses a random word from wordArray
+        guard let randomWord = wordArray.randomElement()?.uppercased()
+        else{
+            chosenWord = "CAT"
+            return
         }
-        
+        chosenWord = randomWord
+        hangmanState = 0 //Resets hangman state
+        displayWord = String(repeating: "_", count: chosenWord.count)
+    }
+    
+    
     func makeGuess() {
         // Check if the guess is a single character
         guard guess.count == 1 else {
@@ -106,6 +108,10 @@ struct HangmanView: View {
         // Convert the guess to a character
         if let guessedChar = guess.uppercased().first {
             var newDisplayWord = ""
+            
+            if !chosenWord.contains(guessedChar) {
+                hangmanState != 1 // updates hangman image
+            }
             
             for (index, char) in chosenWord.enumerated() {
                 if char == guessedChar {
