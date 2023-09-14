@@ -129,15 +129,16 @@ struct HangmanView: View {
         // Clear the guess
         guess = ""
     }
-        
-        func resetGame() {
-            //Reset Logic
-        }
-
-    }
-
-struct HangmanView_Previews: PreviewProvider {
-    static var previews: some View {
-        HangmanView()
+    
+    func resetGame() {
+        //Reset Logic
     }
 }
+    
+    struct HangmanView_Previews: PreviewProvider {
+        static var previews: some View {
+            HangmanView()
+        }
+    }
+    
+
